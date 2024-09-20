@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ghana Gas Zoom</title>
+   <!-- <link rel="stylesheet" href="../css/style.css"/> -->
+   <!-- <link rel="javascript" href="../js/connect.js"/> -->
+    <style>
+        /* Overall Parameters */
+    *{box-sizing: border-box;  }
+    body{ 
+    padding: 0; 
+    margin: 0; 
+    width: 100vw; 
+    background-position: cover; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    overflow: none;
+    background-image: url('https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936878/GPP-1_scjquy.jpg'); 
+
+    
+}
+
+    /* Menu pane */
+    #Header{
+       width: 100%;
+       
+}
+
+    .banner-content{
+
+    display: flex;
+
+    padding: 30px 30px 30px 30px;
+
+    justify-items: center;
+
+    justify-content: space-around;
+    
+    background: #ffffff;
+
+    flex-wrap: nowrap;
+    /* position: relative; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    
+}
+    .Menulist{
+   
+   padding: 15px 0 0 0;
+    /* position: absolute; */
+    /* bottom: 6rem;
+    right: 20rem; */
+    margin: auto;
+
+}
+    .toggler{
+    display: none;
+}
+    .dropmenu{
+    display: none;
+}
+/* .Menubar{
+    display: none;
+} */
+    .Menu{
+ 
+    flex-direction: row;
+
+    margin-right: 20rem;
+
+    margin: auto;
+
+    padding-right: 45rem;
+
+    max-width: 50%;
+
+ 
+}
+/* .banner-content{
+    display: none;
+} */
+
+.social-media-small{
+    display: none;
+}
+.Gaslogo{
+    /* bottom: 0.8rem; */
+    /* padding-left: 5rem; */
+    padding: 0 5rem 0 5rem;
+    margin: auto;
+    /* position: absolute; */
+    /* right: 58rem; */
+    box-sizing: border-box;
+    max-width: 10%;
+}
+.Gas-logo{
+
+    height: clamp(8dvh, 100%, 10vh);
+
+    max-width: clamp(5dvw, 100%, 3vw);
+}
+.Zoomlogo{
+
+    padding-left: 15rem;
+
+    margin: auto;
+}
+.Zoom-logo{
+
+    max-height: clamp(4.5dvh, 100%, 8vh);
+    
+    max-width: clamp(6.5dvw, 100%, 9vh);
+    
+}
+nav > ul{
+    
+    /* border: none; */
+    list-style: none;
+    display: flex;
+    /* padding: 20px; */
+    margin: auto;
+    outline: none;
+}
+nav > ul > li{
+
+    margin: auto;
+   text-align:center;
+   text-wrap: nowrap;
+    padding: 5px;
+
+}
+nav a{
+   /* margin: auto; */
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+}
+
+
+#main{
+    position: relative;
+    height: 100dvh;
+}
+
+.button-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: none;
+    /* gap: 10px 0px; */
+    align-items: center;
+    margin: auto;
+    padding: 65px 100px 65px 100px;
+    justify-content: space-around;
+    /* margin-bottom: 10rem; */
+    text-align: right;
+    gap: 10px;
+}
+.txt-banner{
+    /* margin-top: 6rem; */
+    margin-left: 5rem;
+    position: relative;
+    color:#fff;
+   /* padding: 0 10px 0 10px; */
+   text-align: start;
+   display: block;
+  
+}
+.txt-banner .txt-1{
+     bottom: 9.5rem;
+    position: absolute;
+     margin-top: 5rem;
+    text-align:start;
+    /* display: none; */
+    text-shadow: 0 10px 6px rgba(0, 0, 0, 0.2); 
+}
+.txt-banner .txt-2{
+    text-shadow: 0 10px 6px rgba(0, 0, 0, 0.2);
+    
+}
+.txt-banner p{
+    font-size: 50px;
+   
+}
+.txt-banner h3{
+    font-size: 100px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: none;
+    /* margin-right: 10%; */
+    width: 20rem;
+    align-items: center;
+    
+   
+}
+.buttons li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: none;
+    padding: 10px 10px 10px 10px;
+    width: 20rem;
+}
+
+button{
+    height: 2rem;
+    width: 70%;
+    background: #E8622C;
+    color: #ffff;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+.board{
+    margin-bottom: 10rem;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.2);
+    /* border: 2px solid #000; */
+    max-width: 70dvw;
+    padding: 50px 50px 50px 50px;
+    /* position: absolute; */
+    z-index: 999;
+    margin: auto;
+    /* left: 13.5rem;
+    top: 31rem; */
+    padding-bottom: 3rem;
+    
+}
+.row a{
+    text-decoration: none;
+}
+.support-area img{
+    max-width: 40px;
+}
+
+.download{
+    padding: 40px 40px 40px 40px;    
+}
+.zoom-support{
+    padding: 40px 50px 40px 40px;
+    width: 30em;
+}
+.its-support{
+    padding: 40px 40px 40px 40px;
+}
+/* .background{
+    position: absolute;
+    z-index: -1;
+    bottom: 0.811rem;
+    top: 5rem;
+} */
+
+/* .Wallpaper{
+    height: 100dvh;
+    width: 100dvw;
+} */
+
+#footer{
+
+    height: 15dvh;
+    background: #E8622C;
+    
+}
+
+.social-media{
+    position: fixed;
+    display: column;
+    gap: 10px;
+    /* align-items: center; */
+    /* margin: auto; */
+    /* padding-bottom: 10rem; */
+    align-self: center;  
+    
+}
+.insta-logo{
+    
+    max-height: clamp(3dvh, 100%, 4.5vh);
+    max-width: clamp(3dvw, 100%, 4.5vw);
+
+}
+.fb-logo{
+
+    max-height: clamp(3dvh, 100%, 4.5vh);
+    max-width: clamp(3dvw, 100%, 4.5vw);
+
+}
+.x-logo{
+
+    max-height: clamp(3dvh, 100%, 4.5vh);
+    max-width: clamp(3dvw, 100%, 4.5vw);
+
+}
+.social-media-medium{
+    display: none;
+}
+.Menubar{
+    display: none;
+}
+@media screen and (max-width: 1440px) {
+.Header > .Menu > nav > ul > li > a{
+    font-size: 15px;
+}
+.Menubar{
+    display: none;
+}
+  @media screen and (max-width: 1155px) {
+    *{box-sizing: border-box; }
+/*body{ 
+    padding: 0; 
+    margin: 0; 
+    width: 120vw; 
+    background: url(../img/GPP-1.jpg); 
+    background-position: cover; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    overflow: none;
+    
+}
+*/
+
+/* Menu pane */
+#Header{
+       width: 100%;
+       
+}
+.button-info > .txt-banner > .txt-1{
+    position: absolute;
+    bottom: 7em;
+}
+.row > div > p{
+    font-size: 13px;
+}
+.row > div > h3{
+    font-size: 16px;
+}
+
+.button-info > .txt-banner > .txt-1 > p{
+    font-size: 30px;
+}
+.button-info > .txt-banner > .txt-2 > h3{
+    font-size: 65px;
+}
+.row{
+    padding: 30px 30px 30px 30px;
+}
+.banner-content{
+
+    display: flex;
+
+    padding: 30px 30px 30px 30px;
+
+    justify-items: center;
+
+    justify-content: space-around;
+    
+    background: #ffffff;
+
+    flex-wrap: nowrap;
+    /* position: relative; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    
+}
+
+.Menulist{
+   
+   padding: 15px 0 0 0;
+    /* position: absolute; */
+    /* bottom: 6rem;
+    right: 20rem; */
+    margin: auto;
+
+}
+.toggler{
+    display: none;
+}
+.dropmenu{
+    display: none;
+}
+/* .Menubar{
+    display: none;
+} */
+
+/* .banner-content{
+    display: none;
+} */
+.social-media{
+    display: sticky;
+    position: absolute;
+    z-index: 999;
+}
+.social-media-small{
+    display: none;
+}
+
+.Gaslogo{
+    /* bottom: 0.8rem; */
+    /* padding-left: 5rem; */
+    padding: 0 5rem 0 5rem;
+    margin: auto;
+    /* position: absolute; */
+    /* right: 58rem; */
+    box-sizing: border-box;
+    max-width: 10%;
+}
+.Gas-logo{
+
+    height: clamp(8dvh, 100%, 10vh);
+
+    max-width: clamp(5dvw, 100%, 3vw);
+}
+.Zoomlogo{
+    padding: 20px;
+    /* display: contents; */
+    /* position: absolute; */
+    left: 45rem;
+   
+
+}
+.Zoomlogo > a{
+    padding: 15px 0 0 0;
+}
+.Zoom-logo{
+
+    max-height: clamp(4.5dvh, 100%, 8vh);
+    
+    max-width: clamp(6.5dvw, 100%, 9vh);
+    
+}
+nav > ul{
+    
+    /* border: none; */
+    list-style: none;
+    display: flex;
+    /* padding: 20px; */
+    margin: auto;
+    outline: none;
+}
+nav > ul > li{
+
+    margin: auto;
+   text-align:center;
+   text-wrap: nowrap;
+    padding: 5px;
+
+}
+nav a{
+   /* margin: auto; */
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    font-size: 12px;
+}
+.social-media{
+    display: none;
+}
+.social-media-medium{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 3rem 3rem 0 3rem;
+}
+.Menubar{
+    display: none;
+}
+  }
+}   @media screen and (max-width: 1100px) {
+    *{box-sizing: border-box; }
+body{ 
+    padding: 0; 
+    margin: 0; 
+    width: 10vw; 
+    background: url('https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936878/GPP-1_scjquy.jpg'); 
+    background-position:center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    overflow: none;
+    
+}
+/* .row > .its-support > p{
+    font-size: 10px;
+} */
+/* Menu pane */
+#Header{
+       width: 100%;
+       
+}
+/* .button-info > .txt-banner > .txt-1{
+    position: absolute;
+    bottom: 7em;
+} */
+.board > .row > div > p{
+    font-size: 12px;
+}
+.board > .row > div > h3{
+    font-size: 15px;
+}
+
+.button-info > .txt-banner > .txt-1 > p{
+    font-size: 10px;
+}
+.button-info > .txt-banner > .txt-2 > h3{
+    font-size: 30px;
+}
+.row{
+    padding: 30px 30px 30px 30px;    
+}
+.banner-content{
+
+    display: flex;
+
+    padding: 30px 30px 30px 30px;
+
+    justify-items: center;
+
+    justify-content: space-around;
+    
+    background: #ffffff;
+
+    flex-wrap: nowrap;
+    /* position: relative; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    
+}
+
+.Menulist{
+   
+   padding: 15px 0 0 0;
+    /* position: absolute; */
+    /* bottom: 6rem;
+    right: 20rem; */
+    margin: auto;
+
+}
+.toggler{
+    display: none;
+}
+.dropmenu{
+    display: none;
+}
+/* .Menubar{
+    display: none;
+} */
+
+/* .banner-content{
+    display: none;
+} */
+
+.social-media-small{
+    display: none;
+}
+
+.Gaslogo{
+    /* bottom: 0.8rem; */
+    /* padding-left: 5rem; */
+    padding: 0 5rem 0 5rem;
+    margin: auto;
+    /* position: absolute; */
+    /* right: 58rem; */
+    box-sizing: border-box;
+    max-width: 10%;
+}
+.Gas-logo{
+
+    height: clamp(8dvh, 100%, 10vh);
+
+    max-width: clamp(5dvw, 100%, 3vw);
+}
+.Zoomlogo{
+    padding: 20px;
+    /* display: contents; */
+    /* position: absolute; */
+    left: 45rem;
+   
+
+}
+.Zoomlogo > a{
+    padding: 15px 0 0 0;
+}
+.Zoom-logo{
+
+    max-height: clamp(4.5dvh, 100%, 8vh);
+    
+    max-width: clamp(6.5dvw, 100%, 9vh);
+    
+}
+nav > ul{
+    
+    /* border: none; */
+    list-style: none;
+    display: flex;
+    /* padding: 20px; */
+    margin: auto;
+    outline: none;
+}
+nav > ul > li{
+
+    margin: auto;
+   text-align:center;
+   text-wrap: nowrap;
+    padding: 5px;
+
+}
+nav a{
+   /* margin: auto; */
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    font-size: 12px;
+}
+.social-media{
+    display: none;
+}
+.social-media-medium{
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 3rem 3rem 0 3rem;
+    
+}
+.Menubar{
+    display: none;
+}
+  }
+@media screen and (max-width: 1080px) {
+    *{box-sizing: border-box; }
+body{ 
+    padding: 0; 
+    margin: 0; 
+    width: 120vw; 
+    background: url('https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936878/GPP-1_scjquy.jpg'); 
+    background-position: cover; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    overflow: none;
+    
+}
+
+/* Menu pane */
+#Header{
+       width: 100%;
+       
+}
+.button-info > .txt-banner > .txt-1{
+    position: absolute;
+    bottom: 7em;
+}
+.row > div > p{
+    font-size: 13px;
+}
+.row > div > h3{
+    font-size: 16px;
+}
+
+.button-info > .txt-banner > .txt-1 > p{
+    font-size: 30px;
+}
+.button-info > .txt-banner > .txt-2 > h3{
+    font-size: 65px;
+}
+.row{
+    padding: 30px 30px 30px 30px;
+}
+.banner-content{
+
+    display: flex;
+
+    padding: 30px 30px 30px 30px;
+
+    justify-items: center;
+
+    justify-content: space-around;
+    
+    background: #ffffff;
+
+    flex-wrap: nowrap;
+    /* position: relative; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    
+}
+
+.Menulist{
+   
+   padding: 15px 0 0 0;
+    /* position: absolute; */
+    /* bottom: 6rem;
+    right: 20rem; */
+    margin: auto;
+
+}
+.toggler{
+    display: none;
+}
+.dropmenu{
+    display: none;
+}
+/* .Menubar{
+    display: none;
+} */
+
+/* .banner-content{
+    display: none;
+} */
+.social-media{
+    display: sticky;
+    position: absolute;
+    z-index: 999;
+}
+.social-media-small{
+    display: none;
+}
+
+.Gaslogo{
+    /* bottom: 0.8rem; */
+    /* padding-left: 5rem; */
+    padding: 0 5rem 0 5rem;
+    margin: auto;
+    /* position: absolute; */
+    /* right: 58rem; */
+    box-sizing: border-box;
+    max-width: 10%;
+}
+.Gas-logo{
+
+    height: clamp(8dvh, 100%, 10vh);
+
+    max-width: clamp(5dvw, 100%, 3vw);
+}
+.Zoomlogo{
+    padding: 20px;
+    /* display: contents; */
+    /* position: absolute; */
+    left: 45rem;
+   
+
+}
+.Zoomlogo > a{
+    padding: 15px 0 0 0;
+}
+.Zoom-logo{
+
+    max-height: clamp(4.5dvh, 100%, 8vh);
+    
+    max-width: clamp(6.5dvw, 100%, 9vh);
+    
+}
+nav > ul{
+    
+    /* border: none; */
+    list-style: none;
+    display: flex;
+    /* padding: 20px; */
+    margin: auto;
+    outline: none;
+}
+nav > ul > li{
+
+    margin: auto;
+   text-align:center;
+   text-wrap: nowrap;
+    padding: 5px;
+
+}
+.zoom-support{
+    padding: 40px 40px 40px 70px;
+}
+nav a{
+   /* margin: auto; */
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    font-size: 12px;
+}
+.social-media{
+    display: none;
+}
+.social-media-medium{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 3rem 3rem 0 3rem;
+}
+.Menubar{
+    display: none;
+}
+  } 
+  @media screen and (max-width: 1070px) {
+    *{box-sizing: border-box; }
+body{ 
+    padding: 0; 
+    margin: 0; 
+    width: 120vw; 
+    background: url('https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936878/GPP-1_scjquy.jpg'); 
+    background-position: cover; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    overflow: none;
+    
+}
+
+/* Menu pane */
+#Header{
+       width: 100%;
+       
+}
+.button-info > .txt-banner > .txt-1{
+    position: absolute;
+    bottom: 7em;
+}
+.row > div > p{
+    font-size: 13px;
+}
+.row > div > h3{
+    font-size: 16px;
+}
+
+.button-info > .txt-banner > .txt-1 > p{
+    font-size: 30px;
+}
+.button-info > .txt-banner > .txt-2 > h3{
+    font-size: 65px;
+}
+.row{
+    padding: 30px 30px 30px 30px;
+}
+.banner-content{
+
+    display: flex;
+
+    padding: 30px 30px 30px 30px;
+
+    justify-items: center;
+
+    justify-content: space-around;
+    
+    background: #ffffff;
+
+    flex-wrap: nowrap;
+    /* position: relative; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    
+}
+
+.Menulist{
+   
+   padding: 15px 0 0 0;
+    /* position: absolute; */
+    /* bottom: 6rem;
+    right: 20rem; */
+    margin: auto;
+
+}
+.toggler{
+    display: none;
+}
+.dropmenu{
+    display: none;
+}
+/* .Menubar{
+    display: none;
+} */
+
+/* .banner-content{
+    display: none;
+} */
+.social-media{
+    display: sticky;
+    position: absolute;
+    z-index: 999;
+}
+.social-media-small{
+    display: none;
+}
+
+.Gaslogo{
+    /* bottom: 0.8rem; */
+    /* padding-left: 5rem; */
+    padding: 0 5rem 0 5rem;
+    margin: auto;
+    /* position: absolute; */
+    /* right: 58rem; */
+    box-sizing: border-box;
+    max-width: 10%;
+}
+.Gas-logo{
+
+    height: clamp(8dvh, 100%, 10vh);
+
+    max-width: clamp(5dvw, 100%, 3vw);
+}
+.Zoomlogo{
+    padding: 20px;
+    /* display: contents; */
+    /* position: absolute; */
+    left: 45rem;
+   
+
+}
+.Zoomlogo > a{
+    padding: 15px 0 0 0;
+}
+.Zoom-logo{
+
+    max-height: clamp(4.5dvh, 100%, 8vh);
+    
+    max-width: clamp(6.5dvw, 100%, 9vh);
+    
+}
+.zoom-support{
+    padding: 40px 40px 40px 70px;
+}
+nav > ul{
+    
+    /* border: none; */
+    list-style: none;
+    display: flex;
+    /* padding: 20px; */
+    margin: auto;
+    outline: none;
+}
+nav > ul > li{
+
+    margin: auto;
+   text-align:center;
+   text-wrap: nowrap;
+    padding: 5px;
+
+}
+nav a{
+   /* margin: auto; */
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    font-size: 12px;
+}
+.social-media{
+    display: none;
+}
+.social-media-medium{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 3rem 3rem 0 3rem;
+}
+.Menubar{
+    display: none;
+}
+  } 
+@media screen and (max-width: 1035px) {
+    *{box-sizing: border-box; }
+body{ 
+    padding: 0; 
+    margin: 0; 
+    width: 120vw; 
+    background: url('https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936878/GPP-1_scjquy.jpg'); 
+    background-position: cover; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    overflow: none;
+    
+}
+
+/* Menu pane */
+#Header{
+       width: 100%;
+       
+}
+.button-info > .txt-banner > .txt-1{
+    position: absolute;
+    bottom: 7em;
+}
+.row > div > p{
+    font-size: 13px;
+}
+.row > div > h3{
+    font-size: 16px;
+}
+
+.button-info > .txt-banner > .txt-1 > p{
+    font-size: 30px;
+}
+.button-info > .txt-banner > .txt-2 > h3{
+    font-size: 65px;
+}
+.row{
+    padding: 30px 30px 30px 30px;
+}
+.banner-content{
+
+    display: flex;
+
+    padding: 30px 30px 30px 30px;
+
+    justify-items: center;
+
+    justify-content: space-around;
+    
+    background: #ffffff;
+
+    flex-wrap: nowrap;
+    /* position: relative; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    
+}
+
+.Menulist{
+   
+   padding: 15px 0 0 0;
+    /* position: absolute; */
+    /* bottom: 6rem;
+    right: 20rem; */
+    margin: auto;
+
+}
+.toggler{
+    display: none;
+}
+.dropmenu{
+    display: none;
+}
+/* .Menubar{
+    display: none;
+} */
+
+/* .banner-content{
+    display: none;
+} */
+.social-media{
+    display: sticky;
+    position: absolute;
+    z-index: 999;
+}
+.social-media-small{
+    display: none;
+}
+
+.Gaslogo{
+    /* bottom: 0.8rem; */
+    /* padding-left: 5rem; */
+    padding: 0 5rem 0 5rem;
+    margin: auto;
+    /* position: absolute; */
+    /* right: 58rem; */
+    box-sizing: border-box;
+    max-width: 10%;
+}
+.Gas-logo{
+
+    height: clamp(8dvh, 100%, 10vh);
+
+    max-width: clamp(5dvw, 100%, 3vw);
+}
+.Zoomlogo{
+    padding: 20px;
+    /* display: contents; */
+    /* position: absolute; */
+    left: 45rem;
+   
+
+}
+.zoom-support{
+    padding: 40px 40px 40px 70px;
+}
+.Zoomlogo > a{
+    padding: 15px 0 0 0;
+}
+.Zoom-logo{
+
+    max-height: clamp(4.5dvh, 100%, 8vh);
+    
+    max-width: clamp(6.5dvw, 100%, 9vh);
+    
+}
+nav > ul{
+    
+    /* border: none; */
+    list-style: none;
+    display: flex;
+    /* padding: 20px; */
+    margin: auto;
+    outline: none;
+}
+nav > ul > li{
+
+    margin: auto;
+   text-align:center;
+   text-wrap: nowrap;
+    padding: 5px;
+
+}
+nav a{
+   /* margin: auto; */
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    font-size: 12px;
+}
+.social-media{
+    display: none;
+}
+.social-media-medium{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 3rem 3rem 0 3rem;
+}
+.Menubar{
+    display: none;
+}
+  }
+
+  @media screen and (max-width: 1024px) {
+    *{box-sizing: border-box; }
+body{ 
+    padding: 0; 
+    margin: 0; 
+    width: 120vw; 
+    background: url('https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936878/GPP-1_scjquy.jpg'); 
+    background-position: cover; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    overflow: none;
+    
+}
+
+/* Menu pane */
+#Header{
+       width: 100%;
+       
+}
+.button-info > .txt-banner > .txt-1{
+    position: absolute;
+    bottom: 7em;
+}
+.row > div > p{
+    font-size: 13px;
+}
+.row > div > h3{
+    font-size: 16px;
+}
+
+.button-info > .txt-banner > .txt-1 > p{
+    font-size: 30px;
+}
+.button-info > .txt-banner > .txt-2 > h3{
+    font-size: 65px;
+}
+.row{
+    padding: 30px 30px 30px 30px;
+}
+.banner-content{
+
+    display: flex;
+
+    padding: 30px 30px 30px 30px;
+
+    justify-items: center;
+
+    justify-content: space-around;
+    
+    background: #ffffff;
+
+    flex-wrap: nowrap;
+    /* position: relative; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    
+}
+
+.Menulist{
+   
+   padding: 15px 0 0 0;
+    /* position: absolute; */
+    /* bottom: 6rem;
+    right: 20rem; */
+    margin: auto;
+
+}
+.toggler{
+    display: none;
+}
+.dropmenu{
+    display: none;
+}
+/* .Menubar{
+    display: none;
+} */
+
+/* .banner-content{
+    display: none;
+} */
+.social-media{
+    display: sticky;
+    position: absolute;
+    z-index: 999;
+}
+.social-media-small{
+    display: none;
+}
+
+.Gaslogo{
+    /* bottom: 0.8rem; */
+    /* padding-left: 5rem; */
+    padding: 0 5rem 0 5rem;
+    margin: auto;
+    /* position: absolute; */
+    /* right: 58rem; */
+    box-sizing: border-box;
+    max-width: 10%;
+}
+.Gas-logo{
+
+    height: clamp(8dvh, 100%, 10vh);
+
+    max-width: clamp(5dvw, 100%, 3vw);
+}
+.Zoomlogo{
+    padding: 20px;
+    /* display: contents; */
+    /* position: absolute; */
+    left: 45rem;
+   
+
+}
+.Zoomlogo > a{
+    padding: 15px 0 0 0;
+}
+.Zoom-logo{
+
+    max-height: clamp(4.5dvh, 100%, 8vh);
+    
+    max-width: clamp(6.5dvw, 100%, 9vh);
+    
+}
+.zoom-support{
+    padding: 40px 40px 40px 70px;
+}
+nav > ul{
+    
+    /* border: none; */
+    list-style: none;
+    display: flex;
+    /* padding: 20px; */
+    margin: auto;
+    outline: none;
+}
+nav > ul > li{
+
+    margin: auto;
+   text-align:center;
+   text-wrap: nowrap;
+    padding: 5px;
+
+}
+nav a{
+   /* margin: auto; */
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    font-size: 12px;
+}
+.social-media{
+    display: none;
+}
+.social-media-medium{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 3rem 3rem 0 3rem;
+}
+.Menubar{
+    display: none;
+}
+  }
+
+    </style>
+   <!-- <script src="../js/connect.js"></script> -->
+
+</head>
+<body>
+
+    <!-- Navigation begins here: Ghana Gas logo, menu list items, Zoom Inc Logo -->
+
+    <section id="Header"> 
+
+        <!-- banner sits on the top of the website and has a shadow -->
+
+        <div class="Banner"> 
+
+            <!-- Gas logo sits on the far left -->
+            <div class="banner-content">
+                <div class="Menubar">
+                    <button class="menu-toggle" onclick=""><img src="../img/icons8-menu-bar-50.png" style="height: 40px; width: 40px;"></button>
+                    <div id="mydrop" class="droplist">
+                        
+                        <a class="Howto" href="https://support.zoom.com/hc/en/getting-started?id=getting_started/">Getting Started</a>
+                            
+                        <a class="Website" href="https://www.ghanagas.com.gh/">GhanaGas Home</a>                            
+                                           
+                    </div>
+                </div>
+            <div class="Gaslogo">
+
+                <img class="Gas-logo" src="https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936877/ghana-gas-logo_mehja2.png"/>
+
+            </div>
+            <div class="toggler">
+            
+            <!-- This menu nodes provide a link to external domains centered to the Ghana Gas environment  -->
+            </div>
+            
+            <div class="Menu">
+
+                <!-- Menu should be on the far left, beside the gas logo -->
+
+                <nav class="Menulist">
+
+                    <ul>
+                        
+                        <li><a class="Howto" href="https://support.zoom.com/hc/en/getting-started?id=getting_started/">Getting Started</a></li>
+                        
+                        <li><a class="Website" href="https://www.ghanagas.com.gh/">Ghana Gas Home</a></li>
+                                                
+                    </ul>
+
+                </nav>
+
+            </div>
+
+            <!-- Zoom logo sits on the for right -->
+
+            <div class="Zoomlogo">
+
+                <a class="zoomlink" href="https://www.zoom.us" alt="Zoom Logo"><img class="Zoom-logo" src="https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936877/Zoom-Logo_z5yaky.png"/></a>
+
+            </div>
+        </div>
+        </div>
+       
+        
+    <!-- body of template: Information for support, buttons, and descriptions      -->
+
+    </section>
+
+    <section id="main">
+        <!-- Banner for welcoming visitors to the landing page -->
+        <div class="button-info">
+            <div class="txt-banner">
+                <div class="txt-1">
+
+                    <p>Discover awaits</p>
+
+                </div>
+               
+                <div class="txt-2">
+                  
+                    <h3>Take part, join in!</h3>
+                   
+
+                </div>
+
+            </div>
+            <!-- buttons to provide zoom services to visitors. -->
+            <div class="buttons">
+
+                <ul>
+                    <li><button class="btn-login" onclick="window.location.href='https://ghanagas-gh.zoom.us/signin/'">Login</button></li>
+                    <li><button class="btn-join" onclick="window.location.href = 'https://ghanagas-gh.zoom.us/join/'">join</button></li>
+                    <li><button class="btn-host" onclick="window.location.href = 'https://ghanagas-gh.zoom.us/start/webmeeting/'">Host</button></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="social-media">
+            <div class="instagram">
+                <a class="insta" href="https://www.instagram.com/ghanagasofficial/"><img class="insta-logo" src="https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936877/icons8-instagram-50-filled_azoynb.png"/></a>
+            </div>
+            <div class="facebook">
+                <a class="fb" href="https://www.facebook.com/p/Ghana-National-Gas-Company-100063778503921/"><img class="fb-logo" src="https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936877/icons8-facebook-50-filled_hdd0tc.png"/></a>
+            </div>
+            <div class="twitter">
+                <a class="x" href="https://twitter.com/gngcofficial?lang=en/"><img class="x-logo" src="https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936878/icons8-twitterx-50-filled_agkniy.png"/></a>
+            </div>
+        </div>
+
+       
+        <!-- For visitors in need for technical support or to gain more information -->
+        <div class="support-area">
+            <!-- This board will provide an area for visitor to select a technical support option -->
+            <div class="board">
+
+                <div class="row">
+                    <!-- column one -->
+                    <div class="its-support">
+
+                        <a onclick="window.location = 'mailto:itssupport@ghanagas.com.gh'">
+
+                            <img class="service-logo" src="https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936884/icons8-service-64_knpweu.png" />
+
+                        </a>
+
+                        <h3>ITS SUPPORT</h3>
+                        <p>We provide services that offer solutions for technology-based support.</p>
+                        <p>To find out more,<a class="support-link" href="mailto:itssupport@ghanagas.com.gh">Click Here</a></p>
+
+                    </div>
+                    
+                    <!-- column two -->
+                    <div class="zoom-support">
+
+                        <a href="https://support.zoom.com/hc/en/">
+
+                            <img class="support-logo" src="https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936884/icons8-information-64_euqxrn.png" />
+
+                        </a>
+
+                        <h3>GHANA GAS INTRANET</h3>
+
+                        <p>An information hub</p>
+
+                        <p>To find out more, <a class="support-link" href="http://intranet.ghanagas.local/">Click Here</a></p>
+
+                    </div>
+                    <!-- column three -->
+                    <div class="download">
+
+                        <a href="https://zoom.us/client/latest/ZoomInstaller.exe/">
+
+                            <img class="download-logo" src="https://res.cloudinary.com/dsgrxksw0/image/upload/v1719936879/icons8-download-64_qj8s8k.png" />
+
+                        </a>
+
+                        <h3>DOWNLOAD</h3>
+                        <p>Download zoom to your desktop to offer a more responsive experience during meetings.</p>
+                        <p>To find out more, <a class="download-link" href="https://zoom.us/client/latest/ZoomInstaller.exe/">Click Here</a></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+        
+        <!-- This image is to provide a background for the section but not an entire cover of the section -->
+        <!-- <div class="background"> -->
+
+            <!-- <img class="Wallpaper" src="../img/GPP-1.jpg" alt="Gas Processing Plant"/> -->
+
+        <!-- </div> -->
+
+    </section>
+
+    <section id="footer">
+        <div class="social-media-small">
+            <div class="instagram-small">
+                <a class="insta" href="https://www.instagram.com/ghanagasofficial/"><img class="insta-logo-small" src="https://drive.google.com/file/d/1jgWgyf6aMifnRReE3PKg2I3w6WdPejFr/view?usp=drive_link"/></a>
+            </div>
+            <div class="facebook-small">
+                <a class="fb" href="https://www.facebook.com/p/Ghana-National-Gas-Company-100063778503921/"><img class="fb-logo-small" src="https://drive.google.com/file/d/1zJuW6tLMCKkeAa3KWkeDN3aKx4zZPJlX/view?usp=drive_link"/></a>
+            </div>
+            <div class="twitter-small">
+                <a class="x" href="https://twitter.com/gngcofficial?lang=en/"><img class="x-logo-small" src="https://drive.google.com/file/d/1vJxgJZTBs_D1Jawr_q4M16es0KSvF0xa/view?usp=drive_link"/></a>
+            </div>
+        </div>
+        <div class="social-media-medium">
+            <div class="instagram-medium">
+                <a class="insta" href="https://www.instagram.com/ghanagasofficial/"><img class="insta-logo" src="https://drive.google.com/file/d/1jgWgyf6aMifnRReE3PKg2I3w6WdPejFr/view?usp=drive_link"/></a>
+            </div>
+            <div class="facebook-medium">
+                <a class="fb" href="https://www.facebook.com/p/Ghana-National-Gas-Company-100063778503921/"><img class="fb-logo" src="https://drive.google.com/file/d/1zJuW6tLMCKkeAa3KWkeDN3aKx4zZPJlX/view?usp=drive_link"/></a>
+            </div>
+            <div class="twitter-medium">
+                <a class="x" href="https://twitter.com/gngcofficial?lang=en/"><img class="x-logo" src="https://drive.google.com/file/d/1vJxgJZTBs_D1Jawr_q4M16es0KSvF0xa/view?usp=drive_link"/></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

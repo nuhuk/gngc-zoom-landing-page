@@ -1,0 +1,285 @@
+*{
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+}
+html, body{     
+background-position: cover; 
+background-repeat: no-repeat; 
+background-size: cover;
+height: 100%;
+background-image: url('https://res.cloudinary.com/dsgrxksw0/image/upload/v1721639173/Screenshot_2024-07-22_090523_ugjllh.png') ;        
+font-family: 'Jost', sans-serif;
+}
+
+.signIn{
+padding: 10px;
+margin-left: 30rem;
+}
+.signInBtn{
+    background: rgba(0, 0, 0, 0);
+    border: #000 2px solid;
+    color:#000;
+    border-radius: 12px;
+    width: 6rem;
+    height: 3em;
+    font-size: 1em;
+     transition: 100ms;
+     font-family: 'Jost', sans-serif;
+}
+.signInBtn a{
+    text-decoration: none;
+    color: #000;
+}
+.signInBtn a:hover{
+    text-decoration: none;
+    color: #ffff;
+}
+.signInBtn:hover{
+    background: #000;
+    color:#ffffff;
+    border-radius: 12px;
+    width: 6rem;
+    height: 3em;
+    font-size: 1em;
+    font-family: 'Jost', sans-serif;
+}
+#Header{
+   width: 100%;
+}
+.gas-link{
+width: 3em;
+height: 2em;
+filter: drop-shadow(rgba(0,0,0,0.2));
+}
+.banner-content{
+display: flex;
+justify-items: center;
+justify-content: space-around;    
+background: #ffffff;
+flex-wrap: nowrap;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);    
+width: 100%;
+}
+
+.Gaslogo{
+box-sizing: border-box;
+max-width: 10%;
+}
+.Gas-logo{
+height: 4em;
+width: 6em;
+}
+nav > ul{
+list-style: none;
+display: flex;
+margin: auto;
+outline: none;
+}
+nav > ul > li{
+margin: auto;
+text-align:center;
+text-wrap: nowrap;
+padding: 5px;
+}
+nav a{  
+text-decoration: none;
+padding: 10px;
+color: #000;
+}
+#main{
+height:80dvh;
+}
+.container{
+height: 88dvh;
+width: 100%;
+overflow:auto;
+-ms-overflow-style: none; 
+scrollbar-width: none; 
+display: flex;
+justify-content: center;
+align-items: center;
+/* margin: 0 auto; */
+}
+.container::-webkit-scrollbar {
+display: none; 
+}
+.button-info{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+flex:auto;
+align-items: center;
+text-align: right;
+padding: 100px;
+margin: 0 auto;
+}
+.txt-banner{    
+color:#fff;
+text-align: start;
+display: block;
+font-family: 'Jost', sans-serif;
+width: 50em;  
+}
+.txt-banner .txt-1{
+text-align:start;   
+text-shadow: 0 10px 6px rgba(0, 0, 0, 0.2); 
+}
+.txt-banner .txt-2{
+text-shadow: 0 10px 6px rgba(0, 0, 0, 0.2);
+}
+.txt-banner p{
+font-size: 25px;
+}
+.txt-banner h3{
+font-size: 80px;
+}
+.buttons{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+flex: none;
+width: 20rem;
+align-items: center; 
+}
+.buttons li{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+flex: none;
+padding: 10px 10px 10px 10px;
+width: 20rem;
+justify-content: center;
+}
+button{
+height: 2.5rem;
+width: 70%;
+background: #E8622C;
+color: #ffff;
+border-radius: 20em;
+border: none;
+cursor: pointer;
+font-size: 1em;
+transition: 100ms;
+}
+button a{
+text-decoration: none;
+color: #ffff;
+}
+button a:hover{
+text-decoration: none;
+color: #000;
+}
+button:hover{
+height: 2.5rem;
+width: 70%;
+background: #ffffff;
+color: #000000;
+border-radius: 20em;
+border: none;
+cursor: pointer;
+font-size: 1em;
+}
+.signInBtn{
+position: relative;
+}
+.gas-container{
+height: 14em;
+width: 14em;
+background: rgba(0, 0, 0, 0.2);
+padding: 20px 0 0 0;
+border-radius: 40px;
+}
+.gl-main{
+width: 15em;
+height: 10em;
+padding: 30px 30px 30px 30px;
+}
+#Footer{
+position: sticky;
+}
+.footer{
+background:linear-gradient(rgba(255, 255, 255, 0.752),rgba(255, 255, 255, 0.752));
+display: flex;
+flex-direction: row;
+gap: 30px;
+margin: 0 auto;
+justify-content: space-around;
+height: 6.7em;
+align-items: center;
+font-family: 'Jost', sans-serif;  
+}
+.link-group{
+display: flex;
+flex-direction: row;
+gap: 50px;
+margin: 0 auto;
+padding: 0 0 0 15em;
+}
+.link-group > div > a{
+text-decoration: none;
+color:#000;
+transition: 100ms;
+}
+.link-group > div > a:hover{
+text-decoration: none;
+color:#3368bd;
+}.copyright{
+padding: 0 5em 0 0;
+}
+
+
+@media screen and (max-width: 3840px){
+    .button-info{
+       
+        justify-content: center;
+        margin: 0 auto;
+        gap: 20px;
+    }
+   
+    #main{
+        height:88dvh;
+    }
+    
+}
+@media screen and (max-width: 1920px){
+   
+    .button-info{
+       padding: 11.6em;
+        margin:0 auto;
+        align-items: center;
+    }
+    #main{
+        max-height: 78.7dvh;
+    }
+   
+}
+@media screen and (max-width: 1900px){
+   
+   .button-info{
+      padding: 11.6em;
+       margin:0 auto;
+       align-items: center;
+   }
+   #main{
+       max-height: 87.9dvh;
+   }
+  
+}
+@media screen and (max-width: 830px) {
+    #main{
+        max-width: 50dvh;
+    }
+    #Header{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 380px){
+.Banner{
+    width: 100dvh;
+}
+#Header{
+        width: 100%;
+    }
+}
