@@ -1,0 +1,13 @@
+{
+  "name": "zoom-landing-page",
+  "author": "Nuhu K. Ali",
+  "provider": "Ghana National Gas Limited Company",
+  "private": true,
+  "scripts":{
+    "cy:open": "cypress open"
+  },
+
+  "devDependencies": {
+    "cypress": "^13.14.2"
+  }
+}
